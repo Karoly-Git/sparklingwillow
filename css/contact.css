@@ -1,0 +1,47 @@
+.title-container {
+    *margin: 2rem 0;
+}
+
+.title-container h1 {
+    margin: 2rem 0 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.title-container p {
+    font-family: 'Hubballi', cursive;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.email-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+form, label {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    margin: 0 auto 1rem;
+}
+
+label {
+    max-width: 10rem;
+    font-family: 'Hubballi', cursive;
+    margin-bottom: 0.5rem;
+}
+
+label~input,
+label~textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    min-height: 5rem;
+    padding: 0.5rem;
+}

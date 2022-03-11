@@ -1,0 +1,264 @@
+.main-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slogen {
+    display: none;
+    font-size: 5rem;
+    text-align: center;
+    width: 50%;
+    color: azure;
+    text-shadow: 5px 5px 15px black;
+    font-family: 'Dancing Script', cursive;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.middle-container h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+    width: 70%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+}
+
+.middle-container p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    width: 60%;
+    line-height: 1.75rem;
+    font-family: 'Hubballi', cursive;
+    font-weight: 100;
+}
+
+.category-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.category-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+}
+
+.category-photo-box {
+    position: relative;
+    left: 5%;
+    min-width: 60%;
+    height: 90%;
+    z-index: 1;
+    order: 1;
+}
+
+.description-box {
+    position: relative;
+    right: 5%;
+    min-height: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    line-height: 1.26rem;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.8);
+    order: 2;
+}
+
+.category-box:nth-child(2n) .category-photo-box {
+    left: -5%;
+    order: 2;
+}
+.category-box:nth-child(2n) .description-box {
+    left: 5%;
+    order: 1;
+}
+
+.description-box h3 {
+    color: rgb(202, 136, 43);
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 2px azure;
+}
+
+.description-box p {
+    margin: 1rem 0;
+    font-family: 'Hubballi', cursive;
+}
+
+/*.description-box button {*/
+button {
+    width: 8rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: azure;
+    background-color: rgba(202, 136, 43, 0.8);
+}
+
+/*.description-box button:hover {*/
+button:hover {
+    color: azure;
+    background-color: rgb(80, 114, 126);
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        height: 5rem
+    }
+    .main-photo-container {
+        height: 20rem;
+    }
+
+    .middle-container h2 {
+        font-size: 2.25rem;
+        width: 90%;
+        padding: 0 0 0.25rem;
+        line-height: 2.75rem;
+    }
+
+    .middle-container p {
+        font-size: 1.25rem;
+        line-height: 1.35rem;
+        padding: 0.25rem 0;
+        width: 90%;
+    }
+
+    .category-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 32rem;
+    }
+
+    .category-photo-box {
+        position: relative;
+        align-self: center;
+        left: 0;
+        top: 1rem;
+        width: 90%;
+        height: 20rem;
+        z-index: 1;
+        order: 1;
+    }
+
+    .description-box {
+        position: relative;
+        left: 10%;
+        bottom: 2rem;
+        width: 60%;
+        min-height: auto;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1rem 0;
+        line-height: 1.26rem;
+        text-align: justify;
+        background-color: rgba(255, 255, 255, 0.8);
+        order: 2;
+        margin-bottom: -1rem;
+    }
+
+    .category-box:nth-child(2n) .category-photo-box {
+        left: 0;
+        order: 1;
+    }
+    .category-box:nth-child(2n) .description-box {
+        left: 30%;
+        order: 2;
+    }
+
+    .description-box h3 {
+        color: rgb(202, 136, 43);
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 1px 1px 2px azure;
+    }
+
+    .description-box p {
+        margin: 1rem 0;
+        font-family: 'Hubballi', cursive;
+        font-size: 0.75rem;
+    }
+
+    .description-box button {
+        width: 8rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: azure;
+        background-color: rgba(202, 136, 43, 0.8);
+    }
+
+    .description-box button:hover {
+        color: azure;
+        background-color: rgb(80, 114, 126);
+    }
+}
+
+/*** photobox background images ***/
+.maternity {
+    background-image: url('../img/maternity.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.newborn {
+    background-image: url('../img/newborn.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.sitter {
+    background-image: url('../img/sitter.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.family {
+    background-image: url('../img/family.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.cakesmash {
+    background-image: url('../img/cakesmash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.engagement {
+    background-image: url('../img/engagement.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.weddings {
+    background-image: url('../img/weddings.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* end photobox background images */
+
