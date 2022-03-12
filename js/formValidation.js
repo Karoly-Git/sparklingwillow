@@ -25,6 +25,9 @@ function handleClick() {
         if (!userEmail.match(mailFormat)) {
             document.querySelector('.isValidEmail').style.display = 'flex';
             isError = true;
+        } else {
+            document.querySelector('.isValidEmail').style.display = 'none';
+            isError = false;
         }
     }
 
@@ -36,7 +39,7 @@ function handleClick() {
         isError = false;
     }
 
-    /*
+    /*/
     if (isError) {
         alert('Your form has encountered a problem. Please scroll down to review.')
     }
