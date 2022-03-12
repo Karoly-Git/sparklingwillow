@@ -4,7 +4,7 @@ const newMenuHeight = String(document.querySelector('body').clientHeight) + 'px'
 const heightFromCssFile = '1.5rem'; // It must be the same value that is in file 'basic.css' at selector of '.menu' at value of 'height'.
 const breakPoint = 1100; // The menu collapses to hamburger below this break point. This value is from file 'hamburger.css'.
 
-function hamburgerAnimation() {
+function handleClick() {
     /**
      * Animates the hamburger when clicked.
      * Also, sets the menu height to the same height of the blody.
@@ -24,4 +24,5 @@ function setMenuHeight() {
 }
 
 window.addEventListener('resize', setMenuHeight);
-hamburger.addEventListener('click', hamburgerAnimation);
+hamburger.addEventListener('click', handleClick);
+document.querySelector('.scroll').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
