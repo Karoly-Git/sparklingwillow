@@ -55,13 +55,26 @@
                 </p>
             </div>
             <form action="https://formspree.io/f/xqknbrko" method="POST">
+                <span class="required required-name">
+                    Name is required
+                </span>
                 <label for="name">
-                    Name *
+                    <span>
+                        Name *
+                    </span>
                 </label>
                 <input class="input" type="text" placeholder="" id="name" name="name" required>
 
+                <span class="required required-email">
+                    Email address is required
+                </span>
+                <span class="isValidEmail">
+                    This email doesn't seem to be valid. It should follow the format 'user@domain.com'
+                </span>
                 <label for="email">
-                    Email address *
+                    <span>
+                        Email address *
+                    </span>
                 </label>
                 <input class="input" type="email" placeholder="" id="email" name="email" required>
 
@@ -70,12 +83,17 @@
                 </label>
                 <input class="input" type="tel" placeholder="" id="tel" name="tel">
 
+                <span class="required required-message">
+                    Please type a message
+                </span>
                 <label for="message">
-                    How can I help? *
+                    <span>
+                        How can I help? *
+                    </span>
                 </label>
                 <textarea class="message" placeholder="" id="message" name="message" required></textarea>
 
-                <button class="btn" type="submit" name="submit">Get in touch</button>
+                <button class="btn_submit" type="submit" name="submit">Get in touch</button>
             </form>
         </div>
 
@@ -116,6 +134,7 @@
         </div>
     </footer>
     <script src="./js/hamburger.js"></script>
+    <script src="./js/formValidation.js"></script>
 </body>
 
 </html>
