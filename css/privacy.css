@@ -1,5 +1,16 @@
+body {
+    background-color: darkslategrey;
+    color: white;
+}
+
 .privacy-container * {
     font-family: 'Hubballi', cursive;
+}
+
+.privacy-title {
+    font-family: 'Hubballi', cursive;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .privacy-container {
@@ -8,12 +19,13 @@
 }
 
 .privacy-container h3 {
-    margin: 2rem 0 1rem;
+    margin: 3rem 0 1rem;
     width: 80%;
 }
 
 .privacy-container p {
     text-align: justify;
+    margin-top: 1rem;
 }
 
 .sub-ul-list {
