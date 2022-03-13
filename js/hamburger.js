@@ -25,4 +25,6 @@ function setMenuHeight() {
 
 window.addEventListener('resize', setMenuHeight);
 hamburger.addEventListener('click', handleClick);
-document.querySelector('.scroll').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+
+//document.querySelector('.scroll').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });

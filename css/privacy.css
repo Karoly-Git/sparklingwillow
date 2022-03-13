@@ -1,0 +1,26 @@
+.privacy-container * {
+    font-family: 'Hubballi', cursive;
+}
+
+.privacy-container {
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.privacy-container h3 {
+    margin: 2rem 0 1rem;
+    width: 80%;
+}
+
+.privacy-container p {
+    text-align: justify;
+}
+
+.sub-ul-list {
+    margin-left: 1.5rem;
+}
+
+.sub-ul-list li {
+    margin-top: 0.5rem;
+}
+
