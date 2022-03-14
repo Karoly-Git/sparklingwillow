@@ -20,7 +20,7 @@
     width: 100%;
     height: var(--hamburger-line-height);
     border-radius: var(--hamburger-line-radius);
-    background-color: rgba(128, 128, 128, 1);
+    background-color: rgb(117, 91, 74);
     transition: all 300ms ease-in-out;
 }
 
