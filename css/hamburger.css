@@ -68,6 +68,7 @@
 .menu_after_click {
     display: flex;
     width: 100%;
+    min-height: 100vh;
     background-color: darkred;
     opacity: 0.9;
 }
