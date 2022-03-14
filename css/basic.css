@@ -19,6 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
+    background-color: antiquewhite;
 }
 /* end header */
 
@@ -162,12 +163,12 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: rgba(128, 128, 128, 1);
+    background-color: antiquewhite;
 }
 
 .copyright span {
     padding: 0 0.5rem;
-    color: azure;
+    color:darkgreen;
     font-family: 'Hubballi', cursive;
     text-align: center;
 }
